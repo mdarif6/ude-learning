@@ -50,15 +50,61 @@
 //   console.log("You are Senior!, so pay only $10");
 // }
 
-function getColor(phrase) {
-  if (phrase === "stop") {
-    console.log("red");
-  } else if (phrase === "slow") {
-    console.log("yellow");
-  } else if (phrase === "go") {
-    console.log("green");
-  } else {
-    console.log("purple");
-  }
-}
-getColor("fdf");
+// function getColor(phrase) {
+//   if (phrase === "stop") {
+//     console.log("red");
+//   } else if (phrase === "slow") {
+//     console.log("yellow");
+//   } else if (phrase === "go") {
+//     console.log("green");
+//   } else {
+//     console.log("purple");
+//   }
+// }
+// getColor("fdf");
+
+//5- Nested- individually here
+
+// const password = prompt("Enter a new password");
+
+// if (password.length >= 6) {
+//   console.log("Enough length of password");
+// } else {
+//   console.log("Password must contain 6+ characters! ");
+// }
+
+// //Have to ask
+// if (password.indexOf(" ") === -1) {
+//   console.log(" Good, there is no space");
+// } else {
+//   console.log("Passowrd can not contain space");
+// }
+
+//5A- Nested again
+
+// const password = prompt("Enter a new password");
+
+// if (password.length >= 6) {
+//   if (password.indexOf(" ") === -1) {
+//     console.log("Valid Password");
+//   } else {
+//     console.log("Passowrd can not contain space");
+//   }
+// } else {
+//   console.log("Password is too short and it must contain 6+ characters! ");
+// }
+
+//Excercise
+// const num = 102;
+
+// if (num <= 100) {
+//   if (num > 50) {
+//     console.log("HEY!");
+//   }
+// } else {
+//   if (num < 103) {
+//     if (num % 2 === 0) {
+//       console.log("YOU GOT ME!");
+//     }
+//   }
+// }
