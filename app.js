@@ -94,7 +94,7 @@
 //   console.log("Password is too short and it must contain 6+ characters! ");
 // }
 
-//Excercise
+//6-Excercise
 // const num = 102;
 
 // if (num <= 100) {
@@ -108,3 +108,64 @@
 //     }
 //   }
 // }
+
+//7-TRUTHY AND FALSY
+// const userInput = prompt("Enter Something");
+
+// if (userInput) {
+//   console.log("TRUTHY");
+// } else {
+//   console.log("FALSY");
+// }
+
+// if (" ") {
+//   console.log("TRUTHY");
+// } else {
+//   console.log("FALSY");
+// }
+
+//8-Logical Operators
+
+// const password = prompt("Enter a new password");
+
+// if (password.length >= 6 && password.indexOf(" ") === -1) {
+//   console.log(" yey this is valid password");
+// } else {
+//   console.log(" Incorrect Password- Meet the complexity");
+// }
+
+//9- Ude excercse for and operator
+
+// const mystery = "Password7";
+
+// if (mystery[0] === "P" && mystery.length > 5 && mystery.indexOf("7") !== -1) {
+//   console.log("YOU GOT IT!!!");
+// }
+
+//10- OR Operator
+
+// const age = 4;
+
+// if ((age >= 0 && age < 5) || age >= 65) {
+//   console.log("Free Entry");
+// } else if (age >= 5 && age < 10) {
+//   console.log("Pay$10");
+// } else if (age >= 10 && age < 65) {
+//   console.log("Pay $20");
+// } else {
+//   console.log("Invalid Age Enterd");
+// }
+
+//11- Not Operator
+
+// let firstName = prompt("Enter your first Name");
+
+// if (!firstName) {
+//   firstName = prompt("Keep Trying");
+// }
+
+const age = 44;
+
+if (!((age >= 0 && age < 5) || age >= 65)) {
+  console.log("You are not free ");
+}
