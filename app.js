@@ -164,8 +164,12 @@
 //   firstName = prompt("Keep Trying");
 // }
 
-const age = 44;
+// const age = 44;
 
-if (!((age >= 0 && age < 5) || age >= 65)) {
-  console.log("You are not free ");
-}
+// if (!((age >= 0 && age < 5) || age >= 65)) {
+//   console.log("You are not free ");
+// }
+
+//      JAVASCRIPT ARRAYS
+
+//ask- string vs array to change particular and entire element
