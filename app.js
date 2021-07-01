@@ -126,13 +126,13 @@
 
 //8-Logical Operators
 
-const password = prompt("Enter a new password");
+// const password = prompt("Enter a new password");
 
-if (password.length >= 6 && password.indexOf(" ") === -1) {
-  console.log(" yey this is valid password");
-} else {
-  console.log(" Incorrect Password- Meet the complexity");
-}
+// if (password.length >= 6 && password.indexOf(" ") === -1) {
+//   console.log(" yey this is valid password");
+// } else {
+//   console.log(" Incorrect Password- Meet the complexity");
+// }
 
 //9- Ude excercse for and operator
 
@@ -174,11 +174,47 @@ if (password.length >= 6 && password.indexOf(" ") === -1) {
 
 //ask- string vs array to change particular and entire element
 
-const airplaneSeats = [["Ruth", "Anthony", "Sevie"], ["Amelia","Pedro","Maya"], ["Xavier","Ananya","Luis"], ["Luke",null,"Deniz"], ["Rin","Sakura","Francisco"]]
+// const airplaneSeats = [["Ruth", "Anthony", "Sevie"], ["Amelia","Pedro","Maya"], ["Xavier","Ananya","Luis"], ["Luke",null,"Deniz"], ["Rin","Sakura","Francisco"]]
 
-airplaneSeats
-[Array(3), Array(3), Array(3), Array(3), Array(3)]0: (3) ["Ruth", "Anthony", "Sevie"]0: "Ruth"1: "Anthony"2: "Sevie"length: 3__proto__: Array(0)1: (3) ["Amelia", "Pedro", "Maya"]0: "Amelia"1: "Pedro"2: "Maya"length: 3__proto__: Array(0)2: (3) ["Xavier", "Ananya", "Luis"]3: (3) ["Luke", null, "Deniz"]4: (3) ["Rin", "Sakura", "Francisco"]0: "Rin"1: "Sakura"2: "Francisco"length: 3__proto__: Array(0)length: 5__proto__: Array(0)
-airplaneSeats[3][1]="Hugo"
-"Hugo"
-airplaneSeats
-(5) [Array(3), Array(3), Array(3), Array(3), Array(3)]
+// airplaneSeats
+// [Array(3), Array(3), Array(3), Array(3), Array(3)]0: (3) ["Ruth", "Anthony", "Sevie"]0: "Ruth"1: "Anthony"2: "Sevie"length: 3__proto__: Array(0)1: (3) ["Amelia", "Pedro", "Maya"]0: "Amelia"1: "Pedro"2: "Maya"length: 3__proto__: Array(0)2: (3) ["Xavier", "Ananya", "Luis"]3: (3) ["Luke", null, "Deniz"]4: (3) ["Rin", "Sakura", "Francisco"]0: "Rin"1: "Sakura"2: "Francisco"length: 3__proto__: Array(0)length: 5__proto__: Array(0)
+// airplaneSeats[3][1]="Hugo"
+// "Hugo"
+// airplaneSeats
+// (5) [Array(3), Array(3), Array(3), Array(3), Array(3)]
+
+//Nested Loops1
+
+// let str = "LOL";
+// for (let i = 0; i <= 4; i++) {
+//   console.log(`Outer Loop: ${i}`);
+//   for (let j = 0; j < str.length; j++) {
+//     console.log(`Inner:`, str[j]);
+//   }
+// }
+
+//Nested Loops2
+
+// for (let i = 0; i < 5; i++) {
+//   console.log(`i- outer loop: ${i}`);
+
+//   for (j = 1; j <= 3; j++) {
+//     console.log(`            j-inner loop: ${j}`);
+//   }
+// }
+
+//Nested Loops 3- for Arrays
+
+const seat = [
+  ["This", "is", "Arif"],
+  ["Who", "are", "you"],
+  ["okay", "got", "it"],
+];
+
+console.log(seat);
+for (let i = 0; i < seat.length; i++) {
+  const row = seat[i];
+  for (let j = 0; j < row.length; j++) {
+    console.log(row[j]);
+  }
+}
