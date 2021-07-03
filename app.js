@@ -222,8 +222,28 @@
 
 // While loop
 
-let count = 0;
-while (count < 10) {
-  console.log(count);
-  count++;
+// let count = 0;
+// while (count < 10) {
+//   count++;
+//   console.log(count);
+// }
+
+// While loop eg for secret code
+
+// const SECRET = "network";
+
+// let guess = prompt("Enter the secret code");
+
+// while (guess !== SECRET) {
+//   guess = prompt("Enter the secret code");
+// }
+// console.log("Congrats you found secret code");
+
+//Break the Loop
+
+let input = prompt("Hi, say something");
+while (true) {
+  input = prompt(input);
+  if (input.toLowerCase() === "Stop to copying me") break;
 }
+console.log("Okay you won");
