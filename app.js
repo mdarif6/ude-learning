@@ -205,16 +205,25 @@
 
 //Nested Loops 3- for Arrays
 
-const seat = [
-  ["This", "is", "Arif"],
-  ["Who", "are", "you"],
-  ["okay", "got", "it"],
-];
+// const seat = [
+//   ["This", "is", "Arif"],
+//   ["Who", "are", "you"],
+//   ["okay", "got", "it"],
+// ];
 
-console.log(seat);
-for (let i = 0; i < seat.length; i++) {
-  const row = seat[i];
-  for (let j = 0; j < row.length; j++) {
-    console.log(row[j]);
-  }
+// console.log(seat);
+// for (let i = 0; i < seat.length; i++) {
+//   const row = seat[i];
+//   console.log(`ROW #${i}`);
+//   for (let j = 0; j < row.length; j++) {
+//     console.log(row[j]);
+//   }
+// }
+
+// While loop
+
+let count = 0;
+while (count < 10) {
+  console.log(count);
+  count++;
 }
