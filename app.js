@@ -241,9 +241,70 @@
 
 //Break the Loop
 
-let input = prompt("Hi, say something");
-while (true) {
-  input = prompt(input);
-  if (input.toLowerCase() === "Stop to copying me") break;
+// let input = prompt("Hi, say something");
+// while (true) {
+//   input = prompt(input);
+//   if (input.toLowerCase() === "Stop to copying me") break;
+// }
+// console.log("Okay you won");
+
+//Break eg
+
+// for (let i = 0; i < 1000; i++) {
+//   console.log(i);
+//   if (i === 100) break;
+// }
+
+//Guessing Game
+
+// let maximum = parseInt(prompt("Enter the maximum number"));
+// while (!maximum) {
+//   maximum = parseInt(prompt("Enter the Valid Number only"));
+// }
+// const targetNum = Math.floor(Math.random() * maximum) + 1;
+// let attempt = 1;
+
+// console.log(targetNum);
+
+// let guess = parseInt(prompt("Enter your first guess"));
+// while (guess != targetNum) {
+//   attempt++;
+//   if (guess > targetNum) {
+//     guess = parseInt(prompt("Too High!, Enter a new guess"));
+//   } else {
+//     guess = parseInt(prompt("Too Low!!, Enter a new guess"));
+//   }
+// }
+
+// console.log(`Yey, you got it and you took ${attempt} guesses`);
+
+let userInput = prompt("Enter a number");
+while (!parseInt(userInput)) {
+  userInput = prompt("Enter a valid number");
 }
-console.log("Okay you won");
+
+const targetNum = Math.floor(Math.random() * parseInt(userInput));
+console.log(targetNum);
+
+let guess = prompt("Enter your guess");
+let attempt = 1;
+
+while (parseInt(guess) != targetNum) {
+  if (guess === "q") break;
+  console.log(guess);
+  attempt++;
+
+  if (parseInt(guess) > targetNum) {
+    guess = prompt("Too high");
+  } else if (parseInt(guess) < targetNum) {
+    guess = prompt("Too Low");
+  } else {
+    guess = prompt("Please enter a valid number");
+  }
+}
+if (guess === "q") {
+  console.log("Okay, you quit");
+} else {
+  console.log("congrats you win");
+  console.log(`Correct Number and you took ${attempt} guesses`);
+}
