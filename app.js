@@ -319,13 +319,70 @@
 
 // For Of loop for example
 
-const seat = [
-  ["This", "is", "Arif"],
-  ["Who", "are", "you"],
-  ["okay", "got", "it"],
-];
-for (let row of seat) {
-  for (let name of row) {
-    console.log(name);
+// const seat = [
+//   ["This", "is", "Arif"],
+//   ["Who", "are", "you"],
+//   ["okay", "got", "it"],
+// ];
+// for (let row of seat) {
+//   for (let name of row) {
+//     console.log(name);
+//   }
+// }
+
+// Iterating Over Objects
+
+// const testScore = {
+//   Md: 80,
+//   Arif: 90,
+//   Khan: 93,
+// };
+
+/** 
+ * // for (let person in testScore) {
+//   console.log(`${person} : ${testScore[person]}`);
+// }
+
+// Object.entries(testScore);
+// console.log(testScore);
+ * 
+*/
+
+// let total = 0;
+// let scores = Object.values(testScore);
+// for (let score of scores) {
+//   console.log(score);
+//   total += score;
+// }
+// console.log(total / scores.length);
+
+//TO DO LIST APP
+
+let userInput = prompt("Hello!, Let me know what would you like to do");
+const todos = ["Buy Burger", "Buy Chicken"];
+while (userInput !== "quit" && userInput !== "q") {
+  if (userInput === "list") {
+    console.log("**********************");
+    for (let i = 0; i < todos.length; i++) {
+      console.log(`${i} : ${todos[i]}`);
+    }
+
+    console.log("**********************");
+  } else if (userInput === "new") {
+    const newTodo = prompt("Okay!!, what is the new want todo?");
+    todos.push(newTodo);
+    console.log(`${newTodo} added to the list!!!`);
+  } else if (userInput === "delete") {
+    const index = parseInt(
+      prompt("Okay, please enter an index to delete that")
+    );
+    if (!Number.isNaN(index)) {
+      const deleted = todos.splice(index, 1);
+      console.log(`Okay, deleted ${deleted[0]}`); //why taken zero Index
+    } else {
+      console.log("Unknow index, please try with valid index");
+    }
   }
+  userInput = prompt("Hello!, Let me know what would you like to do");
 }
+console.log("Okay then !! you are quiting this App");
