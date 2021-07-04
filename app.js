@@ -358,31 +358,68 @@
 
 //TO DO LIST APP
 
-let userInput = prompt("Hello!, Let me know what would you like to do");
-const todos = ["Buy Burger", "Buy Chicken"];
-while (userInput !== "quit" && userInput !== "q") {
-  if (userInput === "list") {
-    console.log("**********************");
-    for (let i = 0; i < todos.length; i++) {
-      console.log(`${i} : ${todos[i]}`);
-    }
+// let userInput = prompt("Hello!, Let me know what would you like to do");
+// const todos = ["Buy Burger", "Buy Chicken"];
+// while (userInput !== "quit" && userInput !== "q") {
+//   if (userInput === "list") {
+//     console.log("**********************");
+//     for (let i = 0; i < todos.length; i++) {
+//       console.log(`${i} : ${todos[i]}`);
+//     }
 
-    console.log("**********************");
-  } else if (userInput === "new") {
-    const newTodo = prompt("Okay!!, what is the new want todo?");
-    todos.push(newTodo);
-    console.log(`${newTodo} added to the list!!!`);
-  } else if (userInput === "delete") {
-    const index = parseInt(
-      prompt("Okay, please enter an index to delete that")
-    );
-    if (!Number.isNaN(index)) {
-      const deleted = todos.splice(index, 1);
-      console.log(`Okay, deleted ${deleted[0]}`); //why taken zero Index
-    } else {
-      console.log("Unknow index, please try with valid index");
-    }
-  }
-  userInput = prompt("Hello!, Let me know what would you like to do");
+//     console.log("**********************");
+//   } else if (userInput === "new") {
+//     const newTodo = prompt("Okay!!, what is the new want todo?");
+//     todos.push(newTodo);
+//     console.log(`${newTodo} added to the list!!!`);
+//   } else if (userInput === "delete") {
+//     const index = parseInt(
+//       prompt("Okay, please enter an index to delete that")
+//     );
+//     if (!Number.isNaN(index)) {
+//       const deleted = todos.splice(index, 1);
+//       console.log(`Okay, deleted ${deleted[0]}`); //why taken zero Index
+//     } else {
+//       console.log("Unknow index, please try with valid index");
+//     }
+//   }
+//   userInput = prompt("Hello!, Let me know what would you like to do");
+// }
+// console.log("Okay then !! you are quiting this App");
+
+//FUNCTION//
+// function singSong() {
+//   console.log("Hello sing first song");
+//   console.log("Hello sing second song");
+//   console.log("Hello sing third song");
+//   console.log("Hello sing fourth song");
+// }
+
+// singSong();
+// singSong();
+// singSong();
+
+//FUNCTION WITH ARGUMENT
+
+// function greet(firstName) {
+//   console.log(`Hello ! ${firstName}, how are you?`);
+// }
+
+// greet("Arif");
+
+// RANT Exercise
+
+// function rant(message) {
+//   for (let i = 1; i <= 3; i++)
+//   console.log(message.toUpperCase());
+// }
+
+// rant("i hate beets Arif");
+
+//FUNCTION WITH MULTIPLE ARGUMENT
+
+function greet(firstName, lastName) {
+  console.log(`Hey! ${firstName}`);
 }
-console.log("Okay then !! you are quiting this App");
+
+greet("Arif");
