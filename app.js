@@ -278,33 +278,54 @@
 
 // console.log(`Yey, you got it and you took ${attempt} guesses`);
 
-let userInput = prompt("Enter a number");
-while (!parseInt(userInput)) {
-  userInput = prompt("Enter a valid number");
-}
+// let userInput = prompt("Enter a number");
+// while (!parseInt(userInput)) {
+//   userInput = prompt("Enter a valid number");
+// }
 
-const targetNum = Math.floor(Math.random() * parseInt(userInput));
-console.log(targetNum);
+// const targetNum = Math.floor(Math.random() * parseInt(userInput));
+// console.log(targetNum);
 
-let guess = prompt("Enter your guess");
-let attempt = 1;
+// let guess = prompt("Enter your guess");
+// let attempt = 1;
 
-while (parseInt(guess) != targetNum) {
-  if (guess === "q") break;
-  console.log(guess);
-  attempt++;
+// while (parseInt(guess) != targetNum) {
+//   if (guess === "q") break;
+//   console.log(guess);
+//   attempt++;
 
-  if (parseInt(guess) > targetNum) {
-    guess = prompt("Too high");
-  } else if (parseInt(guess) < targetNum) {
-    guess = prompt("Too Low");
-  } else {
-    guess = prompt("Please enter a valid number");
+//   if (parseInt(guess) > targetNum) {
+//     guess = prompt("Too high");
+//   } else if (parseInt(guess) < targetNum) {
+//     guess = prompt("Too Low");
+//   } else {
+//     guess = prompt("Please enter a valid number");
+//   }
+// }
+// if (guess === "q") {
+//   console.log("Okay, you quit");
+// } else {
+//   console.log("congrats you win");
+//   console.log(`Correct Number and you took ${attempt} guesses`);
+// }
+
+//For..OF Loop example
+
+// const seat = ["This", "is", "Arif", "Who", "are", "you", "okay", "got", "it"];
+
+// for (let name of seat) {
+//   console.log(name);
+// }
+
+// For Of loop for example
+
+const seat = [
+  ["This", "is", "Arif"],
+  ["Who", "are", "you"],
+  ["okay", "got", "it"],
+];
+for (let row of seat) {
+  for (let name of row) {
+    console.log(name);
   }
-}
-if (guess === "q") {
-  console.log("Okay, you quit");
-} else {
-  console.log("congrats you win");
-  console.log(`Correct Number and you took ${attempt} guesses`);
 }
