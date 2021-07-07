@@ -418,8 +418,14 @@
 
 //FUNCTION WITH MULTIPLE ARGUMENT
 
-function greet(firstName, lastName) {
-  console.log(`Hey! ${firstName}`);
-}
+// function greet(firstName, lastName) {
+//   console.log(`Hey! ${firstName}`);
+// }
 
-greet("Arif");
+// greet("Arif");
+
+function lastElement() {
+  let arr = [];
+  console.log(arr);
+}
+lastElement([3, 5, 7]);
