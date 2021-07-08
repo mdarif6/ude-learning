@@ -434,10 +434,49 @@
 // collectEggs();
 // console.log(totalEggs);
 
-let bird = "Scarlet Macaw";
+// let bird = "Scarlet Macaw";
 
-function birdWatch() {
-  // let bird = "Great Blue Heron";
-  console.log(bird);
+// function birdWatch() {
+//   // let bird = "Great Blue Heron";
+//   console.log(bird);
+// }
+// birdWatch();
+
+// function lastElememt(arr) {
+//   if (arr.length !== 0) {
+//     return arr[arr.length - 1];
+//   } else {
+//     return null;
+//   }
+// }
+
+// lastElememt([3, 5, 7]);
+// lastElememt([1]);
+// lastElememt([]);
+
+// function square(x) {
+//   if (x != 0) {
+//     console.log(x ** 2);
+//   }
+//   console.log("Mani");
+// }
+
+// square();
+// square();
+
+// input =>processing => output
+//                         call/invoke argument
+
+function capitalize(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    if (i === 0) {
+      result = result + str[i].toUpperCase();
+    } else {
+      result = result + str[i];
+    }
+  }
+  console.log(result);
 }
-birdWatch();
+
+capitalize("hello");
