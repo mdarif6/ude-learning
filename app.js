@@ -467,16 +467,176 @@
 // input =>processing => output
 //                         call/invoke argument
 
-function capitalize(str) {
-  let result = "";
-  for (let i = 0; i < str.length; i++) {
-    if (i === 0) {
-      result = result + str[i].toUpperCase();
-    } else {
-      result = result + str[i];
-    }
-  }
-  console.log(result);
-}
+// CAPITALIZE FIRST LETTER
 
-capitalize("hello");
+// function capitalize(str) {
+//   let result = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (i === 0) {
+//       result = result + str[i].toUpperCase();
+//     } else {
+//       result = result + str[i];
+//     }
+//   }
+//   console.log(result);
+// }
+
+// capitalize("hello");
+
+//SUM ARRAY EXERCISE
+
+// function sumArray(arrNum) {
+//   let sum = 0;
+//   for (let i = 0; i < arrNum.length; i++) {
+//     sum = sum + arrNum[i];
+//   }
+//   return sum;
+// }
+
+// console.log(sumArray([2, 4, 5]));
+
+// function returnDay(num) {
+//   if (num < 0 || num > 7) {
+//     return null;
+//   } else {
+//     if (num === 1) {
+//       return "Monday";
+//     } else if (num === 2) {
+//       return "Tuesday";
+//     } else if (num === 3) {
+//       return "Wednesday";
+//     } else if (num === 4) {
+//       return "Thursday";
+//     } else if (num === 5) {
+//       return "Friday";
+//     } else if (num === 6) {
+//       return "Saturday";
+//     } else if (num === 7) {
+//       return "Sunday";
+//     }
+//   }
+// }
+// console.log(returnDay(-1));
+// console.log(returnDay(1));
+// console.log(returnDay(2));
+// console.log(returnDay(3));
+// console.log(returnDay(4));
+// console.log(returnDay(5));
+// console.log(returnDay(6));
+// console.log(returnDay(7));
+// console.log(returnDay(8));
+
+// function returnDay(number) {
+//   if (number < 1 || number > 7) {
+//     return null;
+//   }
+//   let dayData = { 1: "Monday", 2: "Tuesday", 3: "Wednesday" };
+//   return dayData[number];
+// }
+
+// console.log(returnDay(2));
+// console.log(returnDay(2));
+
+// let animal = "Lion";
+
+// function animal1() {
+//   let animal = "Elephent";
+//   console.log(animal);
+// }
+// animal1();
+// console.log(animal);
+
+// for (var i = 0; i < 5; i++) {
+//   var msg = "Hello Md arif";
+// }
+// console.log(msg);
+// console.log(i);
+
+//LEXICAL SCOPE
+
+// function callTwice(func) {
+//   func();
+//   func();
+// }
+
+// function callTenTimes(f) {
+//   for (let i = 0; i < 10; i++) {
+//     f();
+//   }
+// }
+
+// function rollDie() {
+//   const roll = Math.floor(Math.random() * 6) + 1;
+//   console.log(roll);
+// }
+
+// callTwice(rollDie);
+
+//RETURNING FUNCTIONS
+
+// function makeMysteryFunc() {
+//   const rand = Math.random();
+//   if (rand > 0.5) {
+//     return function () {
+//       console.log("Congratulation Mr Md Arif");
+//       console.log("You have completed it");
+//     };
+//   } else {
+//     return function () {
+//       alert("A Virus attacked");
+//       alert("Stop trying again and again");
+//       alert("Stop trying again and again");
+//       alert("Stop trying again and again");
+//       alert("Stop trying again and again");
+//       alert("Stop trying again and again");
+//       alert("Stop trying again and again");
+//       alert("Stop trying again and again");
+//     };
+//   }
+// }
+
+// function isBetween(num) {
+//   return num >= 50 && num <= 100;
+// }
+
+// function isBetween2(num) {
+//   return num >= 1 && num <= 10;
+// }
+
+// function makeBetweenFunc(min, max) {
+//   return function (num) {
+//     return num >= min && num <= max;
+//   };
+// }
+
+// const myMath = {
+//   PI: 3.14,
+//   square: function (num) {
+//     return num * num;
+//   },
+
+//   cube: function (num) {
+//     return num ** 3;
+//   },
+// };
+
+// const myMath = {
+//   PI: 3.14,
+//   square(num) {
+//     return num * num;
+//   },
+
+//   cube (num) {
+//     return num ** 3;
+//   },
+// };
+
+const square = {
+  area(side) {
+    return side * side;
+  },
+
+  perimeter(side) {
+    return side * 4;
+  },
+};
