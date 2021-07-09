@@ -631,12 +631,53 @@
 //   },
 // };
 
-const square = {
-  area(side) {
-    return side * side;
-  },
+// const square = {
+//   area(side) {
+//     return side * side;
+//   },
 
-  perimeter(side) {
-    return side * 4;
-  },
-};
+//   perimeter(side) {
+//     return side * 4;
+//   },
+// };
+
+// THIS KEY WORD
+// const cat = {
+//   name: "Blue Stele",
+//   color: "grey",
+//   breed: "scottish",
+//   meow() {
+//     // console.log("mewwwwwwwww");
+//     console.log("thisisss", this);
+//     console.log(`${this.breed}, say mewwwwwwwwwwwwww`);
+//   },
+// };
+
+// const meow2 = cat.meow;
+
+// const hen = {
+//   name: "Helen",
+//   eggCount: 0,
+
+//   layAnEgg() {
+//     eggCount++;
+//     return "EGG";
+//   },
+// };
+
+//TRY CATCH
+
+// try {
+//   hello.toUpperCase();
+// } catch {
+//   console.log("Error");
+// }
+// console.log("After Error");
+
+function yell(msg) {
+  try {
+    console.log(msg.toUpperCase().repeat(3));
+  } catch (e) {
+    console.log("Please Pass a string");
+  }
+}
