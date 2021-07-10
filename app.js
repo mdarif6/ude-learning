@@ -674,10 +674,161 @@
 // }
 // console.log("After Error");
 
-function yell(msg) {
-  try {
-    console.log(msg.toUpperCase().repeat(3));
-  } catch (e) {
-    console.log("Please Pass a string");
-  }
-}
+// function yell(msg) {
+//   try {
+//     console.log(msg.toUpperCase().repeat(3));
+//   } catch (e) {
+//     console.log("Please Pass a string");
+//   }
+// }
+
+// FOR EACH
+
+// const numbers = [
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+// ];
+
+// function print(element) {
+//   console.log(element);
+// }
+// print(numbers[0]);
+// print(numbers[1]);
+// numbers.forEach(print);
+
+// numbers.forEach(function (el) {
+//   if (el % 2 === 0) {
+//     console.log(el);
+//   }
+// });
+
+// for (let el of numbers) {
+//   console.log(el);
+// }
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//   },
+//   {
+//     title: "DDLJ",
+//     score: 99,
+//   },
+//   {
+//     title: "Billu",
+//     score: 89,
+//   },
+//   {
+//     title: "KKKPK",
+//     score: 90,
+//   },
+//   {
+//     title: "Alien",
+//     score: 95,
+//   },
+// ];
+// movies.forEach(function (movie) {
+//   console.log(`${movie.title}- ${movie.score}/100`);
+// });
+
+// const numbers = [
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+// ];
+
+// const doubles = numbers.map(function (num) {
+//   return num * 2;
+// });
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//   },
+//   {
+//     title: "DDLJ",
+//     score: 99,
+//   },
+//   {
+//     title: "Billu",
+//     score: 89,
+//   },
+//   {
+//     title: "KKKPK",
+//     score: 90,
+//   },
+//   {
+//     title: "Alien",
+//     score: 95,
+//   },
+// ];
+
+// const titles = movies.map(function (movie) {
+//   return movie.title.toUpperCase();
+// });
+
+// const fullNames = [
+//   { first: "Albus", last: "Dumbledore" },
+//   { first: "Harry", last: "Potter" },
+//   { first: "Hermione", last: "Granger" },
+//   { first: "Ron", last: "Weasley" },
+//   { first: "Rubeus", last: "Hagrid" },
+//   { first: "Minerva", last: "McGonagall" },
+//   { first: "Severus", last: "Snape" },
+// ];
+
+// const firstName = fullNames.map(function (f) {
+//   return f.first;
+// });
+
+//  ARROW FUNCTION
+
+// const add = function (x, y) {
+//   return x + y;
+// };
+
+// const add = (x, y) => {
+//   return x + y;
+// };
+
+// const square = (x) => {
+//   return x * x;
+// };
+
+// const rollDie = () => {
+//   return Math.floor(Math.random() * 6) + 1;
+// };
+
+// const greet = (str) => {
+//   return `Hey ${str}!`;
+// };
+
+// const rollDie = () => Math.floor(Math.random() * 6) + 1;
+
+const movies = [
+  {
+    title: "Amadeus",
+    score: 99,
+  },
+  {
+    title: "DDLJ",
+    score: 99,
+  },
+  {
+    title: "Billu",
+    score: 89,
+  },
+  {
+    title: "KKKPK",
+    score: 90,
+  },
+  {
+    title: "Alien",
+    score: 95,
+  },
+];
+
+// const titles = movies.map(function (movie) {
+//   return movie.title.toUpperCase();
+// });
+
+const titles = movies.map((movie) => movie.title.toUpperCase());
