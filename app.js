@@ -804,31 +804,294 @@
 
 // const rollDie = () => Math.floor(Math.random() * 6) + 1;
 
-const movies = [
-  {
-    title: "Amadeus",
-    score: 99,
-  },
-  {
-    title: "DDLJ",
-    score: 99,
-  },
-  {
-    title: "Billu",
-    score: 89,
-  },
-  {
-    title: "KKKPK",
-    score: 90,
-  },
-  {
-    title: "Alien",
-    score: 95,
-  },
-];
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//   },
+//   {
+//     title: "DDLJ",
+//     score: 99,
+//   },
+//   {
+//     title: "Billu",
+//     score: 89,
+//   },
+//   {
+//     title: "KKKPK",
+//     score: 90,
+//   },
+//   {
+//     title: "Alien",
+//     score: 95,
+//   },
+// ];
 
-// const titles = movies.map(function (movie) {
-//   return movie.title.toUpperCase();
+// // const titles = movies.map(function (movie) {
+// //   return movie.title.toUpperCase();
+// // });
+
+// const titles = movies.map((movie) => movie.title.toUpperCase());
+
+// console.log("Hello Md Arif");
+// setTimeout(() => {
+//   console.log("Are you there......");
+// }, 3000);
+
+// console.log("Goodbye");
+
+// const id = setInterval(() => {
+//   console.log(Math.random());
+// }, 2000);
+
+//FILTER
+
+// const numbers = [
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+// ];
+
+// numbers.filter((n) => {
+//   return n < 10;
 // });
 
-const titles = movies.map((movie) => movie.title.toUpperCase());
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//     year: 1986,
+//   },
+//   {
+//     title: "DDLJ",
+//     score: 99,
+//     year: 2013,
+//   },
+//   {
+//     title: "Billu",
+//     score: 89,
+//     year: 1986,
+//   },
+//   {
+//     title: "KKKPK",
+//     score: 90,
+//     year: 2004,
+//   },
+//   {
+//     title: "Alien",
+//     score: 70,
+//     year: 1984,
+//   },
+//   {
+//     title: "Notting Hill",
+//     score: 77,
+//     year: 2019,
+//   },
+// ];
+
+// const goodMovies = movies.filter((movie) => {
+//   return movie.score > 80;
+// });
+
+// const goodMovies = movies.filter((m) => m.score > 80); //shorter syntax
+// const badMovies = movies.filter((m) => m.score < 80);
+// const recentMovies = movies.filter((m) => m.year > 1990);
+
+// const goodTitles = goodMovies.map((m) => m.title);
+
+// movies.filter((m) => m.score > 80).map((m) => m.title);
+
+// function validUserNames(usernames) {
+//   return usernames.filter((username) => {
+//     return username.length > 10;
+//   });
+// }
+
+// function validUserNames(usernames) {
+//   return usernames.filter(function (username) {
+//     if (username.length < 10) {
+//       return username;
+//     }
+//   });
+// }
+
+//SOME AND EVERY
+
+// const exams = [
+//   80, 98, 92, 78, 77, 90, 89, 84, 81, 77, 61, 72, 83, 54, 85, 86, 97, 78, 69,
+//   80,
+// ];
+
+// exams.some((score) => score >= 70);
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//     year: 1986,
+//   },
+//   {
+//     title: "DDLJ",
+//     score: 99,
+//     year: 2013,
+//   },
+//   {
+//     title: "Billu",
+//     score: 89,
+//     year: 1986,
+//   },
+//   {
+//     title: "KKKPK",
+//     score: 90,
+//     year: 2004,
+//   },
+//   {
+//     title: "Alien",
+//     score: 70,
+//     year: 1984,
+//   },
+//   {
+//     title: "Notting Hill",
+//     score: 77,
+//     year: 2010,
+//   },
+// ];
+
+// movies.some((movie) => movie.year > 2015);
+
+// function allEven(arr) {
+//   arr.every((num) => num % 2 === 0);
+// }
+
+// function allEven(arr) {
+//   arr.every(function (num) {
+//     if (num % 2 === 0) {
+//       return num;
+//     }
+//   });
+// }
+
+//REDUCE
+
+// [3, 4, 5, 6, 7, 9, 11].reduce((accumulator, currentValue) => {
+//   return accumulator + currentValue;
+// });
+
+// const prices = [9.99, 1.5, 19.99, 49.99, 30.5];
+
+// let total = 0;
+// for (let price of prices) {
+//   total += price;
+// }
+// console.log(total);
+
+// const total = prices.reduce((total, price) => {
+//   return total + price;
+// });
+
+// const total = prices.reduce((total, price) => total + price); //implict return
+
+// const minPrice = prices.reduce((min, price) => {
+//   if (price < min) {
+//     return price;
+//   }
+//   return min;
+// });
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//     year: 1986,
+//   },
+//   {
+//     title: "DDLJ",
+//     score: 99,
+//     year: 2013,
+//   },
+//   {
+//     title: "Billu",
+//     score: 89,
+//     year: 1986,
+//   },
+//   {
+//     title: "KKKPK",
+//     score: 90,
+//     year: 2004,
+//   },
+//   {
+//     title: "Alien",
+//     score: 70,
+//     year: 1984,
+//   },
+//   {
+//     title: "Notting Hill",
+//     score: 77,
+//     year: 2010,
+//   },
+// ];
+
+// const highRated = movies.reduce((bestMovies, currMovie) => {
+//   if (currMovie.score > bestMovies.score) {
+//     return currMovie;
+//   }
+//   return bestMovies;
+// });
+
+// const evens = [2, 4, 6, 8];
+// evens.reduce((sum, num) => sum + num, 100);
+
+//DEFAULT PARAM
+
+// function rollDie(numSides) {
+//   if (numSides === undefined) {
+//     numSides = 6;
+//   }
+//   return Math.floor(Math.random() * numSides) + 1;
+// }
+
+// function rollDie(numSides = 6) {
+//   return Math.floor(Math.random() * 6) + 1;
+// }
+
+// function greet(person, msg = "Hey there", punc = "!!!!!") {
+//   console.log(`${msg}, ${person}${punc}`);
+// }
+
+//SPREAD
+
+// Math.max(12, 323, 343, 33, 34, 353, 646, 4343, 3);
+// Math.min(12, 323, 343, 33, 34, 353, 646, 4343, 3);
+// const nums = [12, 323, 343, 33, 34, 353, 646, 4343, 3];
+// Math.max(...nums);
+// console.log(...nums);
+// console.log(..."Hello");
+
+// const feline = { legs: 4, family: "Felidae" };
+// const canine = { isFurry: true, family: "Caninae" };
+
+// const catDog = { ...feline, ...canine };
+
+// const numSpr = { ...[2, 4, 6, 8] };
+// const Str = [..."Arif"];
+// const dataFromForm = {
+//   email: "djfdsj@gamil.com",
+//   password: "jfsjdl3",
+//   username: "fdfd",
+// };
+// const newUser = { ...dataFromForm, id: 2345, isAdmin: true };
+// function sum() {
+//   return arguments.reduce((total, el) => total + el);
+// }
+
+// sum(3, 4, 4, 2, 5, 6, 7, 3, 2, 4, 5, 6, 7, 2);
+
+// //then rest comes in
+
+// function sum(...nums) {
+//   return nums.reduce((total, el) => total + el);
+// }
+
+function raceResult(gold, silver, ...everyoneElse) {
+  console.log(`Gold medal goes to: ${gold}`);
+  console.log(`silver medal goes to: ${silver}`);
+  console.log(`And thanks to everyone : ${everyoneElse}`);
+}
