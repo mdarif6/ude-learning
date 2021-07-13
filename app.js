@@ -958,16 +958,18 @@
 // movies.some((movie) => movie.year > 2015);
 
 // function allEven(arr) {
-//   arr.every((num) => num % 2 === 0);
+//   return arr.every((num) => num % 2 === 0);
 // }
+// console.log(allEven([2, 4, 6, 8]));
 
-// function allEven(arr) {
-//   arr.every(function (num) {
-//     if (num % 2 === 0) {
-//       return num;
-//     }
-//   });
-// }
+function allEven(arr) {
+  return arr.every(function (num) {
+    if (num % 2 === 0) {
+      return num;
+    }
+  });
+}
+console.log(allEven([1, 2, 3, 4, 5, 6]));
 
 //REDUCE
 
@@ -1090,8 +1092,8 @@
 //   return nums.reduce((total, el) => total + el);
 // }
 
-function raceResult(gold, silver, ...everyoneElse) {
-  console.log(`Gold medal goes to: ${gold}`);
-  console.log(`silver medal goes to: ${silver}`);
-  console.log(`And thanks to everyone : ${everyoneElse}`);
-}
+// function raceResult(gold, silver, ...everyoneElse) {
+//   console.log(`Gold medal goes to: ${gold}`);
+//   console.log(`silver medal goes to: ${silver}`);
+//   console.log(`And thanks to everyone : ${everyoneElse}`);
+// }
